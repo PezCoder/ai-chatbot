@@ -8,7 +8,9 @@ app.get('/', function(req, res) {
   res.sendFile('index.html');
 });
 
-var server = app.listen(3000);
+var server = app.listen(process.env.PORT || 5000, () => {
+  console.log(`Express running on ${server.address().port} in ${app.settings.env}`);
+});
 
 const apiai = require('apiai')(process.env.APIAI_TOKEN);
 
