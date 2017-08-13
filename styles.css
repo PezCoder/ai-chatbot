@@ -4,10 +4,59 @@
 }
 
 body {
-    background: #bada55;
+    background: #666666;
+    font-family: 'Mr De Haviland', cursive;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    margin-top: 6%;
 }
 
 button {
-    padding: 20px 40px;
-    font-size: 25px;
+    background: #77CCA4;
+    outline: 0;
+    border-radius: 100%;
+    font-size: 50px;
+    padding: 45px 58px;
+    border: 0;
+    color: #F0F0D8;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.1);
+}
+
+button.animate {
+    animation: voice_detected 2s infinite;
+}
+
+@keyframes voice_detected {
+    0%, 80% {
+        box-shadow: 0px 0px 0px 0px #b4debe;
+    }
+
+    20%, 60% {
+        box-shadow: 0px 0px 0px 34px #b4debe;
+    }
+
+    40% {
+        box-shadow: 0px 0px 0px 10px #B4DEBE;
+    }
+}
+
+.messages {
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 6%;
+    color: #F0F0D8;
 }

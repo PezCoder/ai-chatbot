@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <title>AI-Chatbot</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
 </head>
 <body>
-    <h1>AI-Chatbot</h1>
-    <button id="talk">Talk</button>
+    <h1>Let's talk, shall we ?</h1>
+    <button id="talk"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+
+    <section class="messages">
+        <article class="you">
+            You: <span id="you" default-message="listening ..."> &nbsp; &lt; Your messages &gt;</span>
+        </article>
+        <article class="bot">
+            Bot: <span id="bot" default-message="..."> &nbsp; &lt; Bot replies &gt;</span>
+        </article>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
     <script src="script.js"></script>
 </body>
