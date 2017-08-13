@@ -17,3 +17,6 @@ recognition.addEventListener('result', e => {
 });
 
 const socket = io();
+socket.on('bot response', res => {
+  console.log(res);
+});
