@@ -60,3 +60,33 @@ button.animate {
     margin-top: 6%;
     color: #F0F0D8;
 }
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+        margin-top: 7%;
+    }
+
+    button {
+        font-size: 40px;
+        padding: 37px 48px;
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+    }
+
+    button:hover,
+    button:focus {
+        transform: translateX(-50%) translateY(-50%) scale(1.1);
+    }
+
+    .messages {
+        position: absolute;
+        bottom: 7%;
+        font-size: 27px;
+        margin-left: 12%;
+        margin-top: 29%;
+    }
+}
