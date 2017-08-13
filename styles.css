@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #bada55;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 25px;
+}
