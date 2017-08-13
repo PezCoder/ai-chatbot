@@ -1,6 +1,3 @@
-// Set environment variables from .env file
-require('dotenv').config();
-
 var express = require('express');
 var app = express();
 
