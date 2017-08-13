@@ -22,10 +22,10 @@ recognition.onsoundend = toggleBtnAnimation;
 function toggleBtnAnimation() {
   if (btn.classList.contains('animate')) {
     // remove class after animation is done
-    btn.addEventListener("animationiteration", ele => {
+    var event = btn.addEventListener("animationiteration", ele => {
       console.log('ended');
       btn.classList.remove('animate');
-      btn.removeEventListener('animationiteration');
+      btn.removeEventListener('animationiteration', event);
     });
   } else {
     btn.classList.add('animate');
