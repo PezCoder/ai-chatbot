@@ -1,3 +1,6 @@
+// Set environment variables from .env file
+require('dotenv').config();
+
 var express = require('express');
 var app = express();
 
@@ -9,3 +12,6 @@ app.get('/', function(req, res) {
 });
 
 var server = app.listen(3000);
+
+const apiai = require('apiai')(process.env.APIAI_TOKEN);
+
