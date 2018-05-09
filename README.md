@@ -16,3 +16,13 @@ Resulting in a conversation. 🗣
 ### Inspiration & helpful links
 1. [Smashing magazine article](https://www.smashingmagazine.com/2017/08/ai-chatbot-web-speech-api-node-js)
 2. [Heroku nodejs deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+
+### Try with a local server
+Rename the `.env-test` to `.env` and fill the env vars:
+
+```
+APIAI_TOKEN=your_token
+APIAI_SESSION_ID=some_unique_session_id
+```
+
+The first one is an API.ai API key (Please get one by sign up with [dialogflow](console.dialogflow.com/api-client)), and the second one is a session ID, which is an arbitrary string.
