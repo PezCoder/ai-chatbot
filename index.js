@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+require('dotenv').config()
+
 // set middleware to serve static assets
 app.use(express.static(__dirname));
 
