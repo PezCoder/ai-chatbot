@@ -25,4 +25,4 @@ APIAI_TOKEN=your_token
 APIAI_SESSION_ID=some_unique_session_id
 ```
 
-The first one is an API.ai API key (Please get one by sign up with [dialogflow](console.dialogflow.com/api-client), and the second one is a session ID, which is an arbitrary string.
+The first one is an API.ai API key (Please get one by sign up with [dialogflow](console.dialogflow.com/api-client)), and the second one is a session ID, which is an arbitrary string.
