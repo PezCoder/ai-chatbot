@@ -1,5 +1,5 @@
 # ai-chatbot
-Bot that listens & talk back, powered by [dialogflow](console.dialogflow.com/api-client)
+Bot that listens & talk back, powered by [dialogflow](https://console.dialogflow.com/api-client)
 
 ### How it works ?
 1. Recognise the input voice using [SpeechRecognition api](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
@@ -25,4 +25,4 @@ APIAI_TOKEN=your_token
 APIAI_SESSION_ID=some_unique_session_id
 ```
 
-The first one is an API.ai API key (Please get one by sign up with [dialogflow](console.dialogflow.com/api-client)), and the second one is a session ID, which is an arbitrary string.
+The first one is an API.ai API key (Please get one by sign up with [dialogflow](https://console.dialogflow.com/api-client)), and the second one is a session ID, which is an arbitrary string.
